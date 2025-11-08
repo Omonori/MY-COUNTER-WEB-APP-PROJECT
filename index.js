@@ -8,6 +8,9 @@ function increment() {
 function decrement() {
     counter--;
     document.getElementById("counter").innerText = counter;
+  if (counter < 0) {
+    counter = 0;
+    document.getElementById("counter").innerText = counter;
 }
 
 function save() {document.getElementById("counter").innerText = counter;
@@ -15,4 +18,4 @@ function save() {document.getElementById("counter").innerText = counter;
     counter = 0;
     document.getElementById("counter").innerText = counter;``
 }
-
+}
